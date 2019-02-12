@@ -1,0 +1,22 @@
+
+<ion-header>
+  <ion-navbar>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="container">
+    <form>
+      <div class="row">
+        <ion-item>
+          <ion-input [(ngModel)]='loginModel.userName' placeholder='Your name goes here' name="userName" required></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-input [(ngModel)]='loginModel.password' placeholder='Your password goes here' name="password" type="password" required></ion-input>
+        </ion-item>
+        <button (click)="logUser()" ion-button full>Login</button>
+      </div>
+    </form>
+  </div>
+</ion-content>
